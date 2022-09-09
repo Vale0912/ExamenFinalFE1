@@ -1,0 +1,73 @@
+/*Estilos generales*/
+html{
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+body{
+    margin: o;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Header*/
+.flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+nav {
+    width: 40%;
+ }
+
+.enlace {
+    text-decoration: none;
+    color: #242E52;
+}
+    
+.btn {
+    background-color: #8B48BF;
+    color: #ffffff;
+    border-radius: 50px;
+    width: 134px;
+    height: 44px;
+    border: none;
+}
+
+/*Main*/
+.section {
+    width: 1129px;
+    height: 525px;
+    margin: 50px;
+}
+h1 {
+    color: #232C50;
+    font-size: 58px;
+    font-weight: 700;
+    line-height: 66.47px;
+}
+.column {
+    flex-direction: column;
+    height: 80vh;
+    width: 40vw;  
+    padding: 40px;
+}
+.Ilustracion {
+    width: 580px;
+    height: 525px;
+ }
+
+.fuente {
+    font-size: 16px;
+    color: black;
+}
+
+.card {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    background-color: #1E1E26;
+    color: #ffffff;
+}
+/*Pseudoclases*/
+
