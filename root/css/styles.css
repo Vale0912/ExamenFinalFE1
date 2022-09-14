@@ -29,6 +29,9 @@ body{
     color: #242E52;
 }
 
+ul {
+    list-style-type: none;
+}
 /*Estilos del Header*/
 
 header{ 
@@ -39,6 +42,10 @@ nav {
     width: 40%;
  }
 
+ .fa-bars {
+    font-size: 2rem;
+    visibility: hidden;
+ }
 header nav ul li a:hover {
     color:#242E52;
     opacity: 0.5;
@@ -113,20 +120,44 @@ h1 {
 .sectiontestimonios .contenedor {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
-    align-content: center;
     margin-bottom: 5rem;
-    margin-top: 3rem;
-    width: 95%;
+    margin-top: 5rem;
+    width: 90%;
+    background-color: #FAFAFA;
 }
+
 .sectiontestimonios .contenedor .card {
     display: flex;
-    align-self: center;
-    align-items: center;
     flex-direction: column;
-    justify-content: center;
-    background-color: #FAFAFA;
+    align-items: center;
+    justify-content: space-between;
+    width: 30%;
+    margin: 0;
+}
+
+.descripcion {
+    color:#B9B9C1;
+    font-size: 16px;
+    text-align: center;
+    padding: 0;
+    margin-bottom: 10%;
+}
+
+.foto {
+    position: relative;
+    bottom: 40px;
+    margin-bottom: 0;
+    padding: 0;
+    width: 70px;
+    height: 70px;
+}
+
+.card h4 {
+    margin: 0;
+    padding: 0;
+    color: #3F4868;
 }
 
 #violet {
@@ -134,17 +165,13 @@ h1 {
     color: #ffffff;
     font-size: 30px;
     margin-top: 15%;
+    justify-content: space-between;
+    padding: 0 4%;
 }
 
-.descripcion {
-    color:#B9B9C1;
-    font-size: 16px;
-    text-align: center;
-}
-
-.h3 {
+.flex .h3 {
     width: 40%;
-    padding: 2%;
+    padding: 2% ;
 } 
 #btn {
     background-color: #ffffff;
@@ -160,6 +187,8 @@ h1 {
     background-color: #8B48BF;
     opacity: 0.5;
 }
+
+/*Estilos del footer*/
 
 footer {
     background-color: #1E1E26;
@@ -211,5 +240,42 @@ footer .formulario {
 footer .formulario p {
     margin-top: 15%;
     font-size: 12px;
+}
+
+/*media queries para version mobile*/
+
+@media (max-width: 480px){
+    html {
+        font-size: 16px;
+    }
+    .fa-bars {
+        visibility: visible;
+    }
+    nav {
+        display: none;
+    }
+    .media {
+        display: none;
+    }
+    header {
+        margin-top: 15%;
+        margin-bottom: 20%%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .mobile {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        align-items: center;
+        justify-content: space-around;
+
+    }
+
+    .hidden {
+        visibility: hidden;
+    }
 }
 
